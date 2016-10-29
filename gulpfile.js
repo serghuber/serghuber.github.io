@@ -16,7 +16,7 @@ var gulp = require('gulp'),
 
 var path = {
   public: {
-    html: 'public/',
+    html: './',
     js: 'public/js/',
     css: 'public/css/',
     img: 'public/img/',
@@ -24,7 +24,7 @@ var path = {
   },
 
   src: {
-    html: 'src/*.html',
+    html: './*.html',
     js: 'src/js/*.js',
     style: 'src/styles/*.*',
     img: 'src/img/**/*.*',
@@ -32,7 +32,7 @@ var path = {
   },
 
   watch: {
-    html: 'src/**/*.html',
+    html: './*.html',
     js: 'src/js/**/*.js',
     style: 'src/styles/**/*.*',
     img: 'src/img/**/*.*',
@@ -127,7 +127,7 @@ gulp.task('watch', function(){
 });
 
 gulp.task('clean', function() {
-	return del.sync('public/**/*.*');
+  return del.sync('public/**/*.*');
 });
 
 gulp.task('default', ['clean', 'build', 'webserver', 'watch']);
