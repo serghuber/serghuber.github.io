@@ -1,0 +1,125 @@
+@media screen and (max-width: 1025px) {
+  header .logo {
+    margin-top: 1%;
+  }
+}
+
+@media screen and (max-width: 910px) {
+  header .logo {
+    font-size: 3rem;
+    margin-top: 2%;
+  }
+  header .about-me {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .preview p {
+    font-size: 0.6rem;
+  }
+  .preview a.info {
+    font-size: 0.9rem;
+  }
+
+  main > section  {
+    min-height: 210px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header .logo {
+    float: none;
+    display: block;
+    text-align: center;
+    margin-left: 0%;
+  }
+  header .about-me {
+    float: none;
+  }
+  main > section {
+    width: 50%;
+    margin-bottom: 2rem;
+  }
+  .preview p {
+    font-size: 0.7rem;
+  }
+  .preview a.info {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  main {
+    margin-top: 1rem;
+  }
+  main > section {
+    width: 100%;
+    padding-bottom: 6%;
+    margin-bottom: 0rem;
+  }
+  main > section .preview {
+    width: 96%;
+  }
+  main > section .description {
+    width: 96%;
+  }
+  main > section .preview p {
+    font-size: 0.8rem;
+  }
+  main > section .preview a.info {
+    font-size: 0.9rem;
+  }
+  .logo a:hover:after{
+    width: 0%;
+  }
+  footer .email {
+    margin-top: 2%;
+    font-size: 0.8rem;
+  }
+  footer .links a:last-child {
+    margin-right: 1%;
+  }
+}
+
+@media screen and (min-width: 1600px) and (max-width: 1919px) {
+  html {
+    font-size: 125%;
+  }
+  div.container {
+    max-width: 1200px;
+  }
+  main > section {
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (min-width: 1920px) and (max-width: 2559px) {
+  html {
+    font-size: 150%;
+  }
+  div.container {
+    max-width: 1440px;
+  }
+  main > section {
+    margin-bottom: 2rem;
+  }
+  .preview a.info {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  html {
+    font-size: 200%;
+  }
+  div.container {
+    max-width: 1920px;
+  }
+  main > section {
+    margin-bottom: 2rem;
+  }
+  header .about-me a {
+    font-size: 1em;
+  }
+}

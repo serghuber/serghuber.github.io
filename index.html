@@ -1,16 +1,189 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Portfolio</title>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio</title>
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/mediaqueries.css">
+  </head>
+  <body>
+    <div class="container clearfix">
 
-  <link href="public/img/favicon1.ico" rel="icon" type="image/x-icon" />
-  <link rel="stylesheet" href="public/css/main.css">
-</head>
-<body>
+      <header class="clearfix">
+        <div class="logo">
+          <a href="">Serhiy Hubarenko</a>
+        </div>
+        <section class="about-me">
+          <p>
+            I am a passionate Front-End Developer, who gets a kick out of JavaScript Ecosystem and Modern Web Development.
+            Here presented some of my projects which has been done during my growing as a front-end developer.
+            You can find more information in my <a href="https://goo.gl/68mDMl" target="_blank">CV</a> and feel free to contact me.
+          </p>
+        </section>
+      </header>
 
-  <script scr='public/js/script.js' type="text/javascript"></script>
-</body>
+      <hr>
+
+      <main class="clearfix">
+
+        <section class="item-1">
+
+          <section class="preview">
+            <img src="images/youtube-finder.png">
+            <div class="mask">
+              <p>Single Page Application for searching videos on YouTube. App built with React Stack and retrieving data from YouTube Data API and Google Maps API.</p>
+              <a href="http://youtube-finder.surge.sh" class="info" target="_blank">Demo</a>
+              <a href="https://github.com/serghuber/youtube-finder" class="info" target="_blank">Code</a>
+            </div>
+          </section>
+
+          <section class="description">
+            <a href="#"><h5>Youtube Finder</h5></a>
+            <div class="tags">
+              <i class="fa fa-tag"></i>
+              <span>React</span><i> | </i>
+              <span>Redux</span><i> | </i>
+              <span>React Bootstrap</span>
+            </div>
+          </section>
+
+        </section>
+
+        <section class="item-2">
+
+          <section class="preview">
+            <img src="images/weather-app.png" alt="">
+            <div class="mask">
+              <p>This app shows you a weather information for multiple cities. Using OpenWeatherMap, Timezonedb, Google Places and Google Geocoding APIs.</p>
+              <a href="https://serghuber.github.io/weather-app" class="info" target="_blank">Demo</a>
+              <a href="https://github.com/serghuber/weather-app" class="info" target="_blank">Code</a>
+            </div>
+          </section>
+
+          <section class="description">
+            <a href="#"><h5>Weather App</h5></a>
+            <div class="tags">
+              <i class="fa fa-tag"></i>
+              <span>ES6</span><i> | </i>
+              <span>SASS</span><i> | </i>
+              <span>Gulp</span>
+            </div>
+          </section>
+
+        </section>
+
+        <section class="item-3">
+
+          <section class="preview">
+            <img src="images/sudoku.png" alt="">
+            <div class="mask">
+              <p>This project provides a simple implementation of Sudoku. App has 3 difficulty levels and validation. Created with React, Redux and Material UI.</p>
+              <a href="https://sudoku-game.herokuapp.com" class="info" target="_blank">Demo</a>
+              <a href="https://github.com/serghuber/sudoku" class="info" target="_blank">Code</a>
+            </div>
+          </section>
+
+          <section class="description">
+            <a href="#"><h5>Sudoku Game</h5></a>
+            <div class="tags">
+              <i class="fa fa-tag"></i>
+              <span>React</span><i> | </i>
+              <span>Redux</span><i> | </i>
+              <span>Material UI</span>
+            </div>
+          </section>
+
+        </section>
+
+        <section class="item-4">
+
+          <section class="preview">
+            <img src="images/my-portfolio.png" alt="">
+            <div class="mask">
+              <p>My portfolio page, which contains some information about me and my projects. Page is fully responsive for all devices and screen resolutions.</p>
+              <a href="https://serghuber.github.io" class="info">Demo</a>
+              <a href="https://github.com/serghuber/serghuber.github.io" class="info" target="_blank">Code</a>
+            </div>
+          </section>
+
+          <section class="description">
+            <a href="#"><h5>My Portfolio</h5></a>
+            <div class="tags">
+              <i class="fa fa-tag"></i>
+              <span>HTML</span><i> | </i>
+              <span>CSS</span><i> | </i>
+              <span>Responsive Design</span>
+            </div>
+          </section>
+
+        </section>
+
+        <section class="item-5">
+
+          <section class="preview">
+            <img src="images/date-calculator.png" alt="">
+            <div class="mask">
+              <p>Very easy app that calculate duration between two dates. UI built with bootstrap and bootstrap-select libraries.</p>
+              <a href="https://serghuber.github.io/date-calculator" class="info" target="_blank">Demo</a>
+              <a href="https://github.com/serghuber/date-calculator" class="info" target="_blank">Code</a>
+            </div>
+          </section>
+
+          <section class="description">
+            <a href="#"><h5>Date Calculator</h5></a>
+            <div class="tags">
+              <i class="fa fa-tag"></i>
+              <span>JQuery</span><i> | </i>
+              <span>CSS</span><i> | </i>
+              <span>Bootstrap</span>
+            </div>
+          </section>
+
+        </section>
+
+        <section class="item-6">
+
+          <section class="preview">
+            <img src="images/form-validation.png" alt="">
+            <div class="mask">
+              <p>Simple registration form with client-side validation. Built with HTML, CSS and JS. Using regular expressions to validate email, password and phone number.</p>
+              <a href="https://serghuber.github.io/form-validation" class="info" target="_blank">Demo</a>
+              <a href="https://github.com/serghuber/form-validation" class="info" target="_blank">Code</a>
+            </div>
+          </section>
+
+          <section class="description">
+            <a href="#"><h5>Form Validation</h5></a>
+            <div class="tags">
+              <i class="fa fa-tag"></i>
+              <span>HTML</span><i> | </i>
+              <span>CSS</span><i> | </i>
+              <span>JavaScript</span>
+            </div>
+          </section>
+
+        </section>
+
+      </main>
+
+      <hr>
+
+      <footer class="clearfix">
+        <span class="email"><a href="mailto:serhiy.hubarenko@gmail.com" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i> serhiy.hubarenko@gmail.com</a></span>
+        <span class="links">
+          <a href="https://www.linkedin.com/in/serhiy-hubarenko" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+          <a href="https://github.com/serghuber" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+        </span>
+      </footer>
+
+    </div>
+  </body>
 </html>

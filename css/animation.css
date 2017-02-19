@@ -1,0 +1,123 @@
+/* Logo animation */
+
+.logo a, .logo a:visited, .logo a:hover, .logo a:active {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  position: relative;
+  transition: 0.5s color ease;
+  text-decoration: none;
+}
+
+.logo a:hover {
+  color: #d73444;
+}
+.logo a:after {
+  content: "";
+  transition: 0.5s all ease;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  position: absolute;
+}
+
+.logo a:after {
+  bottom: 0.1em;
+}
+
+.logo a:after {
+  height: 3px;
+  height: 0.2rem;
+  width: 0;
+  background: #d73444;
+}
+
+.logo a:after {
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.logo a:hover:after {
+  width: 100%;
+}
+
+/* Preview animation */
+
+.preview {
+  width: 300px;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+}
+
+.preview .mask, .view .content {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+}
+
+.preview img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  position: relative;
+}
+
+.preview p {
+  font-family: Georgia, serif;
+  font-style: italic;
+  font-size: 0.9em;
+  position: relative;
+  padding: 7% 4% 5% 5%;
+  text-align: center;
+}
+
+.preview a.info {
+  display: inline-block;
+  text-decoration: none;
+  padding: 1% 4%;
+  margin-left: 3%;
+  background: none repeat scroll 0% 0% #212121;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: 'Times New Roman', Helvetica, sans-serif;
+  font-size: 0.9em;
+  box-shadow: 0 0 1px #000;
+}
+
+.preview a.info:hover {
+  background: #FFF67A;
+  color: #666;
+  box-shadow: 0 0 5px #000;
+}
+
+.preview img {
+  transition: all 0.2s linear;
+}
+.preview .mask {
+  opacity: 0;
+  background-color: rgba(201,201,201, 0.7);
+  transition: all 0.4s ease-in-out;
+}
+.preview p {
+  transform: translateY(100px);
+  opacity: 0;
+  transition: all 0.2s linear;
+}
+.preview a.info {
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+}
+
+.preview:hover .mask {
+  opacity: 1;
+}
+
+.preview:hover p,
+.preview:hover a.info {
+  opacity: 1;
+  transform: translateY(0px);
+}
